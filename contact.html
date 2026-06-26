@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Graphics Department</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="mfnhs.png" class="logo" alt="School Logo">
+                </a>
+
+                <img src="img/graphics.png" class="graphics" alt="Department Logo">
+            </div>
+
+            <div class="navigation">
+                <ul>
+                    <i id="menu-close" class="fas fa-times"></i>
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+
+                <img src="img/menu.png" id="menu-btn" alt="Menu">
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h1>Planning to Contact Graphics?</h1>
+
+        <p>
+            You can contact the main Robotics Club, the Graphics Department Head,
+            or the Club President through Facebook.
+        </p>
+
+        <div class="buttons">
+
+            <a href="https://www.facebook.com/profile.php?id=61566322543509"
+               target="_blank"
+               class="success-btn">
+                <i class="fab fa-facebook"></i>
+                MFNHS Robotics Club
+            </a>
+
+            <a href="https://www.facebook.com/izzy.mu.2024"
+               target="_blank"
+               class="success-btn">
+                <i class="fab fa-facebook"></i>
+                Graphics Head
+            </a>
+
+            <a href="https://www.facebook.com/patrick.maquintura.58"
+               target="_blank"
+               class="success-btn">
+                <i class="fab fa-facebook"></i>
+                Club President
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        $('#menu-btn').click(function () {
+            $('nav .navigation ul').addClass('active');
+        });
+
+        $('#menu-close').click(function () {
+            $('nav .navigation ul').removeClass('active');
+        });
+    </script>
+
+</body>
+</html>
